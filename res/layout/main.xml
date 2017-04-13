@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+         android:id="@+id/tv_head"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:text="四六级成绩查询"
+        android:textSize="18sp"
+        android:textColor="#000"
+         
+         />
+    <EditText
+        android:layout_below="@id/tv_head"
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此处输入准考证号" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_id"
+        android:hint="在此处输入姓名(前三个字)" />
+    <EditText
+        android:id="@+id/et_costype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_id"
+        android:hint="costype" />
+    <EditText
+        android:id="@+id/et_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_id"
+        android:hint="x" />
+    <EditText
+        android:id="@+id/et_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_id"
+        android:hint="y" />
+   <Button
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:text="查询" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_query"
+        android:hint="结果展示框" />
+    
+
+</LinearLayout>
